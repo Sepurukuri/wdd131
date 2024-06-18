@@ -22,7 +22,7 @@
 
 h1, h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent1-color);
 }
 
 p{
@@ -63,38 +63,41 @@ nav a:hover {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1000px;
-    width: 100%;
     padding: 20px;
-    background-color: var(--accent1-color);
-    margin-top: 20px;
-    border-radius: 8px;
-    align-items: center;
+    position: relative;
+    background-color: #3b6c7a;
 }
 
 .card {
-    width: 100%;
-    max-width: 2000px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff; /* Cambié el color de fondo a blanco */
+    background-color:#d1c8c8;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card p{
+    position: absolute;
+    top: 140px;
+    left: 20px;
 }
 
 .card img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    display: block; /* Asegura que la imagen se muestre como bloque */
+    display: block;
 }
 
-.card h2 {
-    margin-top: 0;
-    color: var(--secondary-color);
+.card {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 20px;
+    align-items: start;
+}
+
+.card img {
+    justify-self: end;
+    align-self: start;
 }
 
 footer{
