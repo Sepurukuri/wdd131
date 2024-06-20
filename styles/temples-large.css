@@ -1,0 +1,46 @@
+/* Media query for larger screens */
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    nav {
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+
+    nav ul {
+        flex-direction: row; 
+        display: flex; 
+    }
+
+    #hamburger {
+        display: none; 
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    main h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    figure img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    figcaption {
+        padding: 1rem 0;
+    }
+}
