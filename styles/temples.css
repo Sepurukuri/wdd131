@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
 #hamburger.show {
-    content: 'X'; /* Change icon to 'X' when menu is open */
+    content: 'X'; 
 }
 
 main {
