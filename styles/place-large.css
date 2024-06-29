@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr; 
+    }
+
+    section, aside {
+        position: static; 
+        margin: 10px; 
+    }
+
+    .ushuaia-info, .weather-info {
+        width: 100%; 
+    }
+
+    .ushuaia-info th, .ushuaia-info td, .weather-info th, .weather-info td {
+        font-size: 14px; 
+    }
+}
