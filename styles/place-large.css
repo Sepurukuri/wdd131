@@ -15,4 +15,9 @@
     .ushuaia-info th, .ushuaia-info td, .weather-info th, .weather-info td {
         font-size: 14px; 
     }
+
+    h2::after {
+        content: " ⛅";
+        display: inline-block;
+    }
 }
